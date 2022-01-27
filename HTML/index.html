@@ -39,9 +39,148 @@
         <hr/>
 
         <h3>Images :</h3>
-        <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" alt="Sample Image - 1" /> <br> <br>
+        <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" style="width: 90%;" alt="Sample Image - 1" /> <br> <br>
         <img src="./assets/img/sample-image.jpeg" alt="Sample Image - 2" >
 
+        <img src="https://raw.githubusercontent.com/arunkudiyal/tfa-fed/master/HTML/images/mochi.gif" alt="An GIF Example">
+
         <hr>
+        
+        <h3>Lists - i.) Un-Ordered List (ul) ii.) Ordered Lists (ol) :</h3>
+        <h4>Items to buy from Super Market - </h4>
+        <ul>
+            <li>Fruits</li>
+            <li>Books</li>
+            <li>Vegetables</li>
+            <li>Dog Food</li>
+            <li>Dry Fruits</li>
+        </ul>
+
+        <h4>How to make Tea - </h4>
+        <ol type="i">
+            <li>Add sufficient amount of water.</li>
+            <li>Put sufficient amount of tea in the boiling water.</li>
+            <li>Put sufficient amount of sugar in the boiling water.</li>
+            <li>Let it boil for couple of minutes</li>
+            <li>Put sufficient amount of milk, let it boil.</li>
+            <li>Serve hot!</li>
+        </ol>
+
+        <hr />
+
+        <h3>Forms & Form Elements :</h3>
+        <form action="process.php">
+            <div>
+                <label>Full Name : </label>
+                <input type="text" placeholder="Enter your Full Name..." />
+            </div> <br>
+
+            <div>
+                <label>Email : </label>
+                <!-- username@hostName.com -->
+                <input type="email" placeholder="Enter your Email..." >
+            </div> <br>
+
+            <div>
+                <label>Password : </label>
+                <input type="password" placeholder="Enter your Password..." />
+            </div> <br>
+
+            <div>
+                <label>Gender : </label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </div> <br>
+
+            <div>
+                <label>Date of Birth (DoB) : </label>
+                <input type="date" >
+            </div> <br>
+
+            <div>
+                <label>How happy are you ? </label>
+                <input type="range">
+            </div> <br>
+
+            <div>
+                <label>Submit your Resume here : </label>
+                <input type="file" >
+            </div> <br>
+
+            <div>
+                <label>Feedbacks / Suggestions : </label>
+                <textarea cols="50" rows="10"></textarea>
+            </div> <br>
+
+            <input type="submit" value="SUBMIT FORM">
+            <!-- <button>ADD FORM</button> -->
+        </form>
+
+        <hr>
+
+        <h3>Tables : </h3>
+        <table border="1" >
+            <!-- Table Heading (thead) - No. of cols in a table -->
+            <thead>
+                <th>Emp_ID</th>
+                <th>Emp_Name</th>
+                <th>Emp_Email</th>
+                <th>Emp_Designation</th>
+            </thead>
+
+            <!-- Table Body (tbody) - Values of each coloumn -->
+            <tbody>
+                <tr>
+                    <td>10112</td>
+                    <td>Tim Cook</td>
+                    <td>tim@apple.com</td>
+                    <td>CEO</td>
+                </tr>
+
+                <tr>
+                    <td>10134</td>
+                    <td>John Ive</td>
+                    <td>john_ive@apple.com</td>
+                    <td>Head - Hardware Development</td>
+                </tr>
+
+                <tr>
+                    <td>10135</td>
+                    <td>Fred Fedrique</td>
+                    <td>fred_fedrique@apple.com</td>
+                    <td>Head - Software Development</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Videos : </h3>
+        <video style="width: 60%;" controls poster="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.png" src="./assets/videos/1. Module Introduction.mp4"></video>
+
+        <hr>
+
+        <h3>Youtube Video : </h3>
+        <<iframe width="560" height="315" src="https://www.youtube.com/embed/LGP4-nJM3S4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr>
+
+        <h3>Google Maps : </h3>
+        <h5>Innomatic Research Labs</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.1978724685528!2d78.38792341537562!3d17.498065304208016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1643266801518!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <hr>
+
+        <h3>Audio : </h3>
+        <audio  src="./assets/audio/Two of us - WRABEL | TEASER SONG | LOVE, VICTOR (320  kbps).mp3" controls ></audio>
+
+        <hr>
+
+        <h3>HTML Entities / Chararscter Set</h3>
+        <hr>
+        &copy; 2022-23, Innomatics Research Labs
     </body>
 </html>
