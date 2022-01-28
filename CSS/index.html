@@ -5,35 +5,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Website</title>
+        <!-- 3 ways inc CSS -> 
+            1. Inline CSS - Attribute 
+            2. Internal CSS - HTML Element
+            3. External CSS - Maitain a complete diff CSS file and later include it in the HTML doc.
+        -->
+        <!-- Internal CSS -->
+        <!-- <style>
+            /* CSS CODE - selector { cssProperty: cssPropertyValue; } */
+            h1 {
+                color: red;
+            }
+
+            a {
+                color: black;
+            }
+        </style> -->
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="./styles.css" >
     </head>
     <body>
-        <!-- Commonly Used HTML Elements - 1. Block Level Element 2. Inline Elements 
-            3. Self Ending Elements - COMMENTS -->
-        
-        <!-- Heading Elements - h1 to h6 - coombination of <> & </> -->
-        <h1>Heading - 1</h1>
+        <!-- <h1 style="CSS CODE">Heading - 1</h1> -->
+        <!-- <h1 style="color: purple;">Heading - 1</h1> -->
+        <h1 id="heading-one" >Heading - 1</h1>
+        <h1 id="heading-two" >Heading TWO</h1>
 
         <hr />
-        <!-- <h2>Heading - 2</h2>
-        <h3>Heading - 3</h3>
-        <h4>Heading - 4</h4>
-        <h5>Heading - 5</h5>
-        <h6>Heading - 6</h6> -->
-
-        <!-- Paragraph Element -->
         <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing</b> elit. Tenetur ipsam saepe, blanditiis tempora, quos perspiciatis amet quae molestias sunt maxime minima atque nisi natus <u>praesentium at recusandae earum</u>, excepturi aliquam! <br/> Odit sequi eveniet ipsum doloremque voluptates, illum, ducimus nemo nisi exercitationem <i>repudiandae</i>, delectus minus tempore ea quidem non perferendis! Iure!</p>
 
         <hr>
-
-        <!-- HTML Attributes - Defines the functionality of any element -->
-        <!-- Links - 1. Absolute Link | 2. Relative Link | 3. Root-Relative Link -->
         <h3>Links :</h3>
         <a href="https://www.google.com/" target="_blank">click here to go to Google</a> <br> <br>
         <a href="https://www.facebook.com/" target="_blank">click here to go to Facebook</a> <br> <br>
 
-        <!-- / -> From Root
-            ./ -> From Same Folder
-            ../ -> From previous folder -->
         <a href="./second.html">click here to navigate to 2nd Page</a>
 
         <hr/>
@@ -48,7 +53,7 @@
         
         <h3>Lists - i.) Un-Ordered List (ul) ii.) Ordered Lists (ol) :</h3>
         <h4>Items to buy from Super Market - </h4>
-        <ul>
+        <ul class="list" >
             <li>Fruits</li>
             <li>Books</li>
             <li>Vegetables</li>
@@ -57,12 +62,12 @@
         </ul>
 
         <h4>How to make Tea - </h4>
-        <ol type="i">
-            <li>Add sufficient amount of water.</li>
-            <li>Put sufficient amount of tea in the boiling water.</li>
-            <li>Put sufficient amount of sugar in the boiling water.</li>
+        <ol class="list" type="i">
+            <li>Add <span class="ol-span">sufficient amount</span> of water.</li>
+            <li>Put <span class="ol-span">sufficient amount</span> of tea in the boiling water.</li>
+            <li>Put <span class="ol-span">sufficient amount</span> of sugar in the boiling water.</li>
             <li>Let it boil for couple of minutes</li>
-            <li>Put sufficient amount of milk, let it boil.</li>
+            <li>Put <span class="ol-span">sufficient amount</span> of milk, let it boil.</li>
             <li>Serve hot!</li>
         </ol>
 
@@ -116,29 +121,18 @@
             </div> <br>
 
             <input type="submit" value="SUBMIT FORM">
-            <!-- <button>ADD FORM</button> -->
         </form>
 
         <hr>
 
         <h3>Tables : </h3>
         <table border="1" >
-            <!-- Table Heading (thead) - No. of cols in a table -->
             <thead>
                 <th>Emp_ID</th>
                 <th>Emp_Name</th>
                 <th>Emp_Email</th>
                 <th>Emp_Designation</th>
             </thead>
-
-            <!-- <tr>
-                <td><b>Emp_ID</b></td>
-                <td><b>Emp_Name</b></td>
-                <td><b>Emp_Email</b></td>
-                <td><b>Emp_Designation</b></td>
-            </tr> -->
-
-            <!-- Table Body (tbody) - Values of each coloumn -->
             <tbody>
                 <tr>
                     <td>10112</td>
@@ -183,78 +177,6 @@
 
         <h3>Audio : </h3>
         <audio  src="./assets/audio/Two of us - WRABEL | TEASER SONG | LOVE, VICTOR (320  kbps).mp3" controls ></audio>
-
-        <h3>HTML 5 Semantics : </h3>
-        <!-- <body> -->
-            <!-- <div id="header">
-                <img src="#" alt="LOGO">
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Services</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Contact Us</a>
-                </nav>
-            </div> -->
-
-            <header>
-                <img src="#" alt="LOGO">
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Services</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Contact Us</a>
-                </nav>
-            </header>
-
-            <!-- Side Bar - OPTIONAL -->
-            <aside>
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-            </aside>
-
-            <!-- Main Content -->
-            <main>
-                <section>
-                    <h1>Heaing of the Section</h1>
-                    <article>
-                        <p>Explainination of the section</p>
-                    </article>
-                </section>
-
-                <section>
-                    <h1>Heaing of the Section</h1>
-                    <article>
-                        <p>Explainination of the section</p>
-                    </article>
-                </section>
-
-                <section>
-                    <h1>Heaing of the Section</h1>
-                    <article>
-                        <p>Explainination of the section</p>
-                    </article>
-                </section>
-
-                <section>
-                    <h1>Heaing of the Section</h1>
-                    <article>
-                        <p>Explainination of the section</p>
-                    </article>
-                </section>
-            </main>
-
-            <footer>
-                &copy; 2022-23, Name of the Company
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Services</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Contact Us</a>
-                </nav>
-            </footer>
-        <!-- </body> -->
 
         <hr>
 

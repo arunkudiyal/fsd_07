@@ -1,0 +1,30 @@
+/* selector { cssProperty: cssPropertyValue; } */
+
+/* Selector ->
+1. id Selector
+2. class Selector
+3. Element Selector h1 {...}
+4. Pseudo Selector
+5. Attribute Selector  */
+
+/* 1. ID Selector */
+#heading-one {
+    color: red;
+}
+
+#heading-two {
+    color: green;
+}
+
+/* 2. Class Selector */
+/* .list {
+    color: purple;
+} */
+
+/* ul, ol, p {
+    color: pink;
+} */
+
+.ol-span {
+    color: navy;
+}
