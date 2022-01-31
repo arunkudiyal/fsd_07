@@ -25,6 +25,79 @@
     color: pink;
 } */
 
-.ol-span {
+/* .ol-span {
+    color: navy;
+} */
+
+/* PSEUDO SELECTORS - : --> - Natural actions of any element */
+#heading-one:hover {
+    color: white;
+}
+
+#link-one:active {
+    background-color: blue;
+}
+
+#link-two:visited {
+    background-color: yellow;
+}
+
+.unordered-list:first-child {
     color: navy;
 }
+
+.unordered-list:nth-child(3) {
+    color: pink;
+}
+
+.unordered-list:last-child {
+    color: green;
+}
+
+/* ATTRIBUTE SELECTORS - [ ] */
+
+/* ^ -> STARTS WITH
+$ -> ENDS WITH
+* -> CONTAINS */
+
+/* img[src^="https"] {
+    border: 5px solid black;
+} */
+
+/* img[src$=".jpeg"] {
+    border: 5px solid red;
+} */
+
+/* img[alt*="Sample"] {
+    border: 5px solid navy;
+} */
+
+
+
+/* COLORS */
+
+/* 1. Name Color
+2. Hex Code (#abcdef)
+3. RGB Value - rgb(a, b, c)
+4. RGBA - RGBAbs --> Abs - 0-1 */
+
+body {
+    background: linear-gradient(to bottom, rgba(65, 228, 242, 1), rgba(65, 228, 242, 0.6));
+}
+
+#container-one {
+    height: 400px;
+    width: 75%;
+
+    /* Gradients - 1. Linear Gradient | 2. Radial Gradient  */
+    /* background: linear-gradient(direction, set_of_colors); */
+    background: linear-gradient(360deg, red, black, #57a2f7, white);
+}
+
+#container-two {
+    height: 400px;
+    width: 75%;
+    background: radial-gradient(red, blue, green 20%, yellow, white);
+}
+
+/* UNITS OF MAESUREMENTS */
