@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;&display=swap');
 /* selector { cssProperty: cssPropertyValue; } */
 
 /* Selector ->
@@ -14,6 +15,7 @@
 
 #heading-two {
     color: green;
+    text-align: center;
 }
 
 /* 2. Class Selector */
@@ -83,6 +85,8 @@ $ -> ENDS WITH
 
 body {
     background: linear-gradient(to bottom, rgba(65, 228, 242, 1), rgba(65, 228, 242, 0.6));
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 #container-one {
@@ -100,4 +104,65 @@ body {
     background: radial-gradient(red, blue, green 20%, yellow, white);
 }
 
-/* UNITS OF MAESUREMENTS */
+/* UNITS OF MAESUREMENTS - Absolute Unit | Relative Unit */
+/* Absolute Units - cm, mm, px, m
+Relative Units - %, vh, vw, em */
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p {
+    /* font-size: 20px; */
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+#container-zero {
+    background-color: orange;
+
+    height: 400px;
+    width: 70vw;
+}
+
+/* FONTS --> 1. sans-serif 2. serif */
+/* font-family; font-size, font-weight */
+
+
+/* Link CSS Properties */
+a {
+    text-decoration: none;
+    color: black;
+
+    cursor: pointer;
+}
+
+a:hover {
+    color: grey;
+}
+
+
+/* BOX MODEL ---> Any HTML element, is nothing but a BOX.  */
+#img-one {
+    /* border: size_of_border style_of_border color_of_border; */
+    border: 5px double red;
+    
+    /* padding: Space b/w border and the BOX */
+    padding: 15px;
+    /* padding: TOP-BOTTOM-px LEFT-RIGHT-px */
+    padding: 10px 5px;
+    /* padding: TOP-px RIGHT-px BOTTOM-px LEFT-px */
+    padding: 5px 10px 15px 20px;
+
+    /* margin --> Space outside the Border */
+    margin: 10px;
+    margin: 20px 10px;
+    margin: 20px 15px 10px 5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
