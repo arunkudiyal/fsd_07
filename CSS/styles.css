@@ -217,3 +217,16 @@ header {
     border: 0px;
     border-radius: 15px;
 }
+
+/* MEDIA QUERIES */
+@media(max-width: 500px) {
+
+    body {
+        background: black;
+        color: white
+    }
+
+    #image-two {
+        width: 85%;
+    }
+}
